@@ -1,0 +1,697 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/**********************/
+/*     Style utils    */
+/**********************/
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+/**********************/
+/*     wrapper        */
+/**********************/
+.wrapper .container {
+  /*     display: flex;
+      flex-direction: column; */
+  /* profil */
+  /* aside */
+  /*  body_wrapper_right */
+}
+.wrapper .container .title_profil {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 30px 0 10px 0;
+  position: relative;
+}
+.wrapper .container .title_profil .title {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.wrapper .container .title_profil .content_vide {
+  position: absolute;
+  height: 15px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.74);
+  bottom: 0;
+  z-index: 0;
+}
+.wrapper .container .title_info {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 30px 0 10px 0;
+  position: relative;
+}
+.wrapper .container .title_info .title {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.wrapper .container .title_info .content_vide {
+  position: absolute;
+  height: 15px;
+  width: 135px;
+  background-color: rgba(255, 255, 255, 0.74);
+  bottom: 0;
+  z-index: 0;
+}
+.wrapper .container aside {
+  background-color: rgb(221, 182, 10);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* image */
+  /*  informations */
+  /* content */
+}
+.wrapper .container aside .profil_img {
+  position: relative;
+  /* span{
+      position: absolute;
+      content: " ";
+      height: 20px;
+      width: 100px;
+      left: 95px;
+      top: -10px;
+      background-color: rgba(255, 255, 255, 0.829);
+  } */
+}
+.wrapper .container aside .profil_img img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -3px;
+}
+.wrapper .container aside .profil_informations .information {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+.wrapper .container aside .content ul li {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+.wrapper .container aside .content ul li .icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  background-color: white;
+  border-radius: 50%;
+}
+.wrapper .container aside .content ul li .icon span {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 10px;
+  width: 5px;
+  transform: rotate(30deg);
+}
+.wrapper .container .body_wrapper_right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* experiences */
+  /* formations */
+  /* learn */
+}
+.wrapper .container .body_wrapper_right .name_person .name {
+  text-align: center;
+  margin: 20px 0 10px 0;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.wrapper .container .body_wrapper_right .name_person .work {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .title_experience {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 30px 0 10px 0;
+  position: relative;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .title_experience .title {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  line-height: 1.5;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .title_experience .content_vide {
+  position: absolute;
+  height: 15px;
+  width: 270px;
+  background-color: rgb(221, 182, 10);
+  top: 52px;
+  left: 20px;
+  z-index: 0;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_1 {
+  margin: 0 0 140px 0;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_2 {
+  margin: 0 0 130px 0;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_3 {
+  margin: 0 0 170px 0;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_4 {
+  margin: 0 0 130px 0;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_5 {
+  margin: 0 0 130px 0;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .list .cercle {
+  height: 10px;
+  width: 10px;
+  border: 1px solid rgb(221, 182, 10);
+  border-radius: 50%;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_1 {
+  width: 2px;
+  height: 170px;
+  background-color: rgb(221, 182, 10);
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_2 {
+  width: 2px;
+  height: 180px;
+  background-color: rgb(221, 182, 10);
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_3 {
+  width: 2px;
+  height: 170px;
+  background-color: rgb(221, 182, 10);
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_4 {
+  width: 2px;
+  height: 180px;
+  background-color: rgb(221, 182, 10);
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_5 {
+  width: 2px;
+  height: 150px;
+  background-color: rgb(221, 182, 10);
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .work_experience .work {
+  margin: 20px 0;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .work_experience .work h3 {
+  margin-bottom: 10px;
+}
+.wrapper .container .body_wrapper_right .experiences_pro .experience .work_experience .work ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+.wrapper .container .body_wrapper_right .formations .title_formations {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 30px 0 10px 0;
+  position: relative;
+}
+.wrapper .container .body_wrapper_right .formations .title_formations .title {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  line-height: 1.5;
+}
+.wrapper .container .body_wrapper_right .formations .title_formations .content_vide {
+  position: absolute;
+  height: 15px;
+  width: 170px;
+  background-color: rgb(221, 182, 10);
+  bottom: 0;
+  left: 70px;
+  z-index: 0;
+}
+.wrapper .container .body_wrapper_right .learn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .container .body_wrapper_right .learn .date {
+  margin-left: 65px;
+}
+.wrapper .container .body_wrapper_right .learn .date ul .date_1 {
+  margin: 0 0 70px 0;
+}
+.wrapper .container .body_wrapper_right .learn .date ul .date_2 {
+  margin: 0 0 50px 0;
+}
+.wrapper .container .body_wrapper_right .learn .date ul .date_3 {
+  margin: 0 0 30px 0;
+}
+.wrapper .container .body_wrapper_right .learn .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.wrapper .container .body_wrapper_right .learn .list .cercle {
+  height: 10px;
+  width: 10px;
+  border: 1px solid rgb(221, 182, 10);
+  border-radius: 50%;
+}
+.wrapper .container .body_wrapper_right .learn .list .trait_1 {
+  width: 2px;
+  height: 80px;
+  background-color: rgb(221, 182, 10);
+}
+.wrapper .container .body_wrapper_right .learn .list .trait_2 {
+  width: 2px;
+  height: 45px;
+  background-color: rgb(221, 182, 10);
+}
+.wrapper .container .body_wrapper_right .learn .list .trait_3 {
+  width: 2px;
+  height: 45px;
+  background-color: rgb(221, 182, 10);
+}
+.wrapper .container .body_wrapper_right .learn .etude .diplome {
+  margin: 20px 0;
+}
+.wrapper .container .body_wrapper_right .learn .etude .diplome h3 {
+  margin-bottom: 10px;
+}
+.wrapper .container .body_wrapper_right .learn .etude .diplome ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  /**********************/
+  /*     wrapper        */
+  /**********************/
+  .wrapper .container {
+    /* profil */
+    /* aside */
+    /*  body_wrapper_right */
+  }
+  .wrapper .container .title_profil .content_vide {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.74);
+    bottom: 0;
+  }
+  .wrapper .container .title_info .title {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .wrapper .container .title_info .content_vide {
+    width: 135px;
+    background-color: rgba(255, 255, 255, 0.74);
+    bottom: 0;
+  }
+  .wrapper .container aside {
+    /* image */
+    /*  informations */
+  }
+  .wrapper .container aside .profil_img {
+    position: relative;
+  }
+  .wrapper .container .body_wrapper_right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* experiences */
+    /* formations */
+    /* learn */
+  }
+  .wrapper .container .body_wrapper_right .name_person .name {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-size: 3.5rem;
+    font-weight: bolder;
+  }
+  .wrapper .container .body_wrapper_right .name_person .work {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .title_experience .content_vide {
+    position: absolute;
+    height: 15px;
+    width: 440px;
+    background-color: rgb(221, 182, 10);
+    top: 20px;
+    left: 14%;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience {
+    justify-content: space-between;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_1 {
+    margin: 20px 0 170px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_2 {
+    margin: 10px 0 160px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_3 {
+    margin: 10px 0 180px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_4 {
+    margin: 0 0 170px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_5 {
+    margin: 0 0 160px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: -40px 10px 0 10px;
+    height: 100%;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .cercle {
+    height: 20px;
+    width: 20px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_1 {
+    height: 150px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_2 {
+    height: 180px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_3 {
+    height: 160px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_4 {
+    height: 150px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_5 {
+    height: 100px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .work_experience .work {
+    margin: 0 0 90px 0;
+  }
+  .wrapper .container .body_wrapper_right .formations .title_formations .content_vide {
+    position: absolute;
+    height: 15px;
+    width: 170px;
+    bottom: 0;
+    left: 37%;
+  }
+  .wrapper .container .body_wrapper_right .learn {
+    justify-content: center;
+  }
+  .wrapper .container .body_wrapper_right .learn .date {
+    margin-left: 150px;
+  }
+  .wrapper .container .body_wrapper_right .learn .date ul .date_1 {
+    margin: 0px 0 60px 0;
+  }
+  .wrapper .container .body_wrapper_right .learn .date ul .date_2 {
+    margin: 0px 0 80px 0;
+  }
+  .wrapper .container .body_wrapper_right .learn .date ul .date_3 {
+    margin: 0px 0 50px 0;
+  }
+  .wrapper .container .body_wrapper_right .learn .list .cercle {
+    height: 20px;
+    width: 20px;
+  }
+  .wrapper .container .body_wrapper_right .learn .list .trait_1 {
+    height: 60px;
+  }
+  .wrapper .container .body_wrapper_right .learn .list .trait_2 {
+    height: 70px;
+  }
+  .wrapper .container .body_wrapper_right .learn .list .trait_3 {
+    height: 45px;
+  }
+  .wrapper .container .body_wrapper_right .learn .etude .diplome {
+    margin: 20px 0;
+  }
+  .wrapper .container .body_wrapper_right .learn .etude .diplome ul li {
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  /**********************/
+  /*     wrapper        */
+  /**********************/
+  .wrapper .container {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    /* profil */
+    /* aside */
+    /*  body_wrapper_right */
+  }
+  .wrapper .container .title_profil .content_vide {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.74);
+    bottom: 0;
+  }
+  .wrapper .container .title_info .title {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .wrapper .container .title_info .content_vide {
+    width: 135px;
+    background-color: rgba(255, 255, 255, 0.74);
+    bottom: 0;
+  }
+  .wrapper .container aside {
+    /* image */
+    /*  informations */
+  }
+  .wrapper .container aside .bottom {
+    margin-bottom: 120px;
+  }
+  .wrapper .container aside .profil_img {
+    position: relative;
+  }
+  .wrapper .container .body_wrapper_right {
+    padding: 20px 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    /* experiences */
+    /* formations */
+    /* learn */
+  }
+  .wrapper .container .body_wrapper_right .name_person .name {
+    font-size: 3.5rem;
+    margin-top: 20px;
+  }
+  .wrapper .container .body_wrapper_right .name_person .work {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .title_experience .content_vide {
+    left: 5%;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience {
+    display: grid;
+    grid-template-columns: 25% 5% 70%;
+    gap: 20px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date {
+    margin-top: 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_1 {
+    margin: 0px 0 130px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_2 {
+    margin: 0px 0 150px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_3 {
+    margin: 0px 0 140px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_4 {
+    margin: 0 0 140px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .date ul .date_5 {
+    margin: 0 0 150px 30px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: -40px 10px 0 10px;
+    height: 100%;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .cercle {
+    height: 20px;
+    width: 20px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_1 {
+    height: 150px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_2 {
+    height: 180px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_3 {
+    height: 160px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_4 {
+    height: 150px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .list .trait_5 {
+    height: 100px;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience .work_experience .work {
+    margin: 0 0 90px 0;
+  }
+  .wrapper .container .body_wrapper_right .formations {
+    margin-top: -80px;
+    margin-left: -90px;
+  }
+  .wrapper .container .body_wrapper_right .formations .title_formations .title {
+    text-align: left;
+    margin-left: 125px;
+  }
+  .wrapper .container .body_wrapper_right .formations .title_formations .content_vide {
+    position: absolute;
+    height: 15px;
+    width: 170px;
+    bottom: 0;
+    left: 21%;
+  }
+  .wrapper .container .body_wrapper_right .learn .date {
+    margin-left: 150px;
+  }
+  .wrapper .container .body_wrapper_right .learn .date ul .date_1 {
+    margin: 0px 0 60px 0;
+  }
+  .wrapper .container .body_wrapper_right .learn .date ul .date_2 {
+    margin: 0px 0 80px 0;
+  }
+  .wrapper .container .body_wrapper_right .learn .date ul .date_3 {
+    margin: 0px 0 50px 0;
+  }
+  .wrapper .container .body_wrapper_right .learn .list .cercle {
+    height: 20px;
+    width: 20px;
+  }
+  .wrapper .container .body_wrapper_right .learn .list .trait_1 {
+    height: 60px;
+  }
+  .wrapper .container .body_wrapper_right .learn .list .trait_2 {
+    height: 70px;
+  }
+  .wrapper .container .body_wrapper_right .learn .list .trait_3 {
+    height: 45px;
+  }
+  .wrapper .container .body_wrapper_right .learn .etude .diplome {
+    margin: 20px 0;
+  }
+  .wrapper .container .body_wrapper_right .learn .etude .diplome ul li {
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  /**********************/
+  /*     wrapper        */
+  /**********************/
+  .wrapper .container {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    /*  body_wrapper_right */
+  }
+  .wrapper .container .body_wrapper_right {
+    padding: 20px 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* experiences */
+    /* formations */
+  }
+  .wrapper .container .body_wrapper_right .name_person .name {
+    font-size: 5rem;
+  }
+  .wrapper .container .body_wrapper_right .name_person .work {
+    font-size: 1.4rem;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .title_experience .title {
+    text-align: left;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .title_experience .content_vide {
+    left: 1%;
+  }
+  .wrapper .container .body_wrapper_right .experiences_pro .experience {
+    display: grid;
+    grid-template-columns: 25% 5% 70%;
+    gap: 20px;
+  }
+  .wrapper .container .body_wrapper_right .formations {
+    margin-top: -80px;
+    margin-right: 40px;
+  }
+  .wrapper .container .body_wrapper_right .formations .title_formations .title {
+    text-align: left;
+    margin-left: 30px;
+  }
+  .wrapper .container .body_wrapper_right .formations .title_formations .content_vide {
+    left: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  /**********************/
+  /*     wrapper        */
+  /**********************/
+  .wrapper .container {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    /*  body_wrapper_right */
+  }
+}/*# sourceMappingURL=style.css.map */
